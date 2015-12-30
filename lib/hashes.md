@@ -5,40 +5,81 @@ instructor_notes: Feel free to re-organize the headings (or add/remove headings)
 
 # What is a Hash?
 
-Replace me with your response...
+A Hash is a collection of key-value pairs.
 
 # What are some examples of information that would be Hashes as opposed to some other data type?
 
-Replace me with your response...
+Any kind of information that has a unique value that is associated with it.
 
 # How are Hashes and Arrays similar? How are they different?
 
-Replace me with your response...
+An array is an ordered list that you can call to. Hashes are a collection of paired information. They're not about order but about what info is paired with what.
 
 # How do you retrieve a particular value from a Hash?
 
-Replace me with your response...
+You call its key.
 
 # How do you add information to a Hash?
 
-Replace me with your response...
+Hashes use the "bracket-equals" [] method to add data.
+
+hash = {
+    "apple": "red",
+    "pear": "green",
+    "banana": "yellow"
+  }
+hash[:peach] = "peach"
 
 # How would you perform an operation on every element inside a Hash?
 
-Replace me with your response...
+Using the .each method. 
+
+hash = {
+  "apple": "red",
+  "pear": "green",
+  "banana": "yellow"
+}
+
+hash.each {|key, value| puts "This #{key} is so tasty!" }
+
+returns This apple is so tasty! This pear is so tasty! This banana is so tasty!
 
 # How would you change the value of a particular element in a Hash?
+Using the [] method
 
-Replace me with your response...
+hash = {
+    "apple": "red",
+    "pear": "green",
+    "banana": "yellow"
+  }
+hash[:apple] = "peach"
+
+returns {:apple=>"peach", :pear=>"green", :banana=>"yellow"}
 
 # How do you delete an element from a Hash?
 
-Replace me with your response...
+Using .delete method follow by the element you wish to be deleted in ().
+
+hash = {
+    "apple": "red",
+    "pear": "green",
+    "banana": "yellow"
+  }
+hash.delete(:apple)
 
 # What happens if you try to retrieve an element from a Hash that does not exist in the Hash?
 
-Replace me with your response...
+It will return a default value or if no default is set it returns nil.
 
 # How do you determine how many elements are in a Hash?
 
-Replace me with your response...
+Using .length method 
+
+hash = {
+    "apple": "red",
+    "pear": "green",
+    "banana": "yellow"
+  }
+hash.length
+
+returns 3
