@@ -25,7 +25,7 @@ You should be able to add a new key value pair by entering them in the format ha
 
 # How would you perform an operation on every element inside a Hash?
 
-You'd use the each method.  So, if you had a hash wherein you wanted to increase all your values (assuming they're integers) by a value of 1, you could type something like hash.each do |key, value| and specify in the block hash[key] = value  + 1.  It's worth noting that this change is superficial.  It doesn't actually change the values in the hash, it just performs a given action or set of actions on them.
+You'd use the each method.  So, if you had a hash wherein you wanted to increase all your values (assuming they're integers) by a value of 1, you could type something like hash.each do |key, value| and specify in the block hash[key] = value  + 1.  It's worth noting that this change is NOT superficial.  It does actually change the values in the hash.  However, if you were to have the code in the block say something like puts value + 1, this would not actually change the original hash but would instead just display the values in the hash increased by one.  Methods like print or puts don't actually return data, they just display it.
 
 # How would you change the value of a particular element in a Hash?
 
