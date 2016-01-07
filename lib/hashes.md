@@ -5,40 +5,56 @@ instructor_notes: Feel free to re-organize the headings (or add/remove headings)
 
 # What is a Hash?
 
-Replace me with your response...
+An unordered collection of unique keys and their values.
 
 # What are some examples of information that would be Hashes as opposed to some other data type?
 
-Replace me with your response...
+lists that require to be broken out into subcategoires that do not require a particular order as opposed to just lists that fall into one category.  I.E. 
+
+student_ages = {
+    "Jack" => 10,
+    "Jill" => 12,
+    "Bob" => 16
+}
+
 
 # How are Hashes and Arrays similar? How are they different?
 
-Replace me with your response...
+Arrays allow you to make an ordered list.  Hashes allow you to make an unordered list (keys) but with details/definitions (values).
 
 # How do you retrieve a particular value from a Hash?
 
-Replace me with your response...
+Write the name of the object and follow it with square brackets [] and inside the brackets write the key. If the key is a string use quotation marks.
 
 # How do you add information to a Hash?
 
-Replace me with your response...
-
+hash.merge! As far as I can tell it doesnt alter the original hash but creates a new one using the previous hash and the new hash.  It took me 2 hours to find this answer...
+hash = {"a" => 1} hash.merge!("b" => 2, "c" => 3)
 # How would you perform an operation on every element inside a Hash?
 
-Replace me with your response...
+name.each do |key/value|
 
 # How would you change the value of a particular element in a Hash?
 
-Replace me with your response...
+hash.merge! works for this as well. Using the same code as above hash = {"a" => 1} hash.merge!("b" => 2, "c" => 3)
+ you can just add hash.merge!("b" => 4) and it will return {"a"=>1, "b"=>4, "c"=>3]
+ 
+ So using the method similiar to the array instead you can use something like, hash={
+    'Jon' => 38, 
+    'Taylor' => 45, 
+    'Courtney' => 30, 
+}
 
+hash['Taylor']= 17 
+puts hash
 # How do you delete an element from a Hash?
 
-Replace me with your response...
+Hash.delete (key)
 
 # What happens if you try to retrieve an element from a Hash that does not exist in the Hash?
 
-Replace me with your response...
+nil is returned
 
 # How do you determine how many elements are in a Hash?
 
-Replace me with your response...
+hash.count
