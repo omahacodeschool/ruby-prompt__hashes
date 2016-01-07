@@ -38,6 +38,15 @@ name.each do |key/value|
 
 hash.merge! works for this as well. Using the same code as above hash = {"a" => 1} hash.merge!("b" => 2, "c" => 3)
  you can just add hash.merge!("b" => 4) and it will return {"a"=>1, "b"=>4, "c"=>3]
+ 
+ So using the method similiar to the array instead you can use something like, hash={
+    'Jon' => 38, 
+    'Taylor' => 45, 
+    'Courtney' => 30, 
+}
+
+hash['Taylor']= 17 
+puts hash
 # How do you delete an element from a Hash?
 
 Hash.delete (key)
