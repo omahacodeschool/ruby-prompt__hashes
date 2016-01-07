@@ -5,15 +5,16 @@ instructor_notes: Feel free to re-organize the headings (or add/remove headings)
 
 # What is a Hash?
 
-Replace me with your response...
+Hashes are sort of like dictionaries. It is a collection of keys and values where you can refer to a value using the associated key, or vice versa.
 
 # What are some examples of information that would be Hashes as opposed to some other data type?
 
-Replace me with your response...
+Hashes are useful when you are referring to some value associated with an object, such as an item's price or a person's age. If you wanted to work with prices or ages of a set of values, you would use a Hash.
 
 # How are Hashes and Arrays similar? How are they different?
 
-Replace me with your response...
+Arrays and Hashes are both collections of values and can point to various objects that are stored in slots within them.
+However, Hashes are not indexed by position number, where each value has a position in the Array indicated by a number. Instead, you can use any value to refer to a particular slot, also called a key. That key could be price, age, etc.
 
 # How do you retrieve a particular value from a Hash?
 
