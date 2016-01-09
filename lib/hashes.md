@@ -5,40 +5,46 @@ instructor_notes: Feel free to re-organize the headings (or add/remove headings)
 
 # What is a Hash?
 
-Replace me with your response...
+A hash is a collection of objects, like an array, but they dont have to be numbers.  Hashes contain a set of 'keys' and 'values', where
+the values dont need to be numbers.
 
 # What are some examples of information that would be Hashes as opposed to some other data type?
 
-Replace me with your response...
+The information used in a hash would be lists of items, to be set for a given value.  A ranking of different teams and their given value in different
+areas, such as strength, speed, debth, etc, or a list of ingredients on a pizza.
 
 # How are Hashes and Arrays similar? How are they different?
 
-Replace me with your response...
+Hashes and arrays are both lists, but hashes dont have to use numbers to index them, or describe them, they can be terms or definitions.
 
 # How do you retrieve a particular value from a Hash?
 
-Replace me with your response...
+A value from a hash can be retrieved by 'put'ing or 'print'ing the value like a variable.
 
 # How do you add information to a Hash?
 
-Replace me with your response...
+A hash is built by defineing the hash, and puting given keys to be equal to or greater than the given value.
 
 # How would you perform an operation on every element inside a Hash?
 
-Replace me with your response...
+I am really struggling with this question, and the same question with refference to performing an opperation to every element in an array.
 
 # How would you change the value of a particular element in a Hash?
 
-Replace me with your response...
+by referencing the 'key' that you want to change, you can change the 'value' after you have created the hash.  This is my 'pizza hash'
+pizza = {'crust' => 'White Flour','Sauce' => 'Tomato Basil','Cheese' => 'Mozzerella',
+'Topping_1' => 'Mushrooms','Topping_2' => 'Pepperoni'}
+if I wanted to change the type of crust for the pizza, I would:
+pizza['crust'] = 'Wheat Flour'
 
 # How do you delete an element from a Hash?
 
-Replace me with your response...
+The '.delete' command should delete an element from a hash.  Such as pizza.delete('Topping_1')
 
 # What happens if you try to retrieve an element from a Hash that does not exist in the Hash?
 
-Replace me with your response...
+I dont think anything will happen if you havent defined it in the hash.
 
 # How do you determine how many elements are in a Hash?
 
-Replace me with your response...
+print hash.size should give you how many elements are in the hash.
