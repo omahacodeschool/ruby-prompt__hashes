@@ -3,6 +3,31 @@ title: Hashes
 instructor_notes: Feel free to re-organize the headings (or add/remove headings) below. We included the headings for your benefit, but it's 100% fine if you want to write your responses in some different structure.
 ---
 
+#THE NEW STUFF IS UP HERE AT THE TOP NOW. THESE TWO LITTLE PROGRAMS.
+
+# How would you perform an operation on every element inside a Hash?
+
+#TO PERFORM AN OPERATION ON EVERY ELEMENT IN A HASH -- NEW AND IMPROVED! My operation was to put each key-value pair in a sentence.
+StateCaps2 = Hash.new{}
+StateCaps2 = {"Idaho"=>"Boise", "Oregon"=>"Salem", "Vermont"=>"Montpelier", "Iowa"=>"Des Moines"}
+StateCaps2.each {|key, value| puts "The capital of #{key} is #{value}."}
+
+
+# How would you change the value of a particular element in a Hash?
+
+
+#TO CHANGE ONE ITEM IN A HASH -- NEW AND IMPROVED! NO MORE MERGE! I learned about the rehash method, which will update the 
+#hash with any changed values. In this case, I changed the capital of Oregon from Portland to Salem. In repl.it, this returned
+#the entire "statecaps" hash with "Salem" where "Portland" was. 
+statecaps = Hash.new{}
+statecaps = {"Idaho"=>"Boise", "Oregon"=>"Portland", "Vermont"=>"Montpelier", "Iowa"=>"Des Moines"}
+statecaps["Oregon"] = "Salem"
+statecaps.rehash
+
+
+
+
+
 # What is a Hash?
 
 A hash is like an array except that you can use anything, not just a number, as the index. A hash associates one thing with
@@ -67,11 +92,14 @@ StateCaps2.each do
 end
 
 
+
 # How would you change the value of a particular element in a Hash?
 There is probably a much more elegant way to do this than what I have done here. Using the states and capitals hash again, I changed
 the capital of Oregon from Salem to Portland. It's not right, but let's say it is. It looks like the merge found the 
 key "Oregon" and over-wrote the old capital "Salem" with the new one, "Portland." There is probably a way to do this
 in one line of code.
+
+
 
 PROGRAM TO CHANGE THE VALUE OF AN ELEMENT IN A HASH. let's say Oregon moved its capital to Portland and we had to update records.
 StateCaps2 = Hash.new{}
