@@ -1,0 +1,3 @@
+The_Beatles = {"Guitar" => "John Lennon", "Bass" => "Paul McCartney", "Drums" => "Pete Best", "Bass2" => "Stuart Sutcliffe"}
+puts The_Beatles["Guitar"]
+puts The_Beatles["Vocals"]
