@@ -20,7 +20,7 @@ Hashes can be used for any sort of list that has elements that each have a value
 
 # How are Hashes and Arrays similar? How are they different?
 
-Hashes and arrays are both collections of data and share a number of methods like .length and .each. Hashes have another layer of information contained in them, the named key. This key is used to find certain values instead of using the numerical position in the dat set.
+Hashes and arrays are both collections of data and share a number of methods like .length and .each. Hashes have another layer of information contained in them, the named key. This key is used to find certain values instead of using the numerical position in the data set.
 
 
 # How do you retrieve a particular value from a Hash?
@@ -44,7 +44,7 @@ Now the array contains the key "onions" with a value of 11.
 
 # How would you perform an operation on every element inside a Hash?
 
-You can perform an operation on each element using the .each method. With .each you can set up a block of code in curly quotes that will be executed on each key/value pair. It might look like this:
+You can perform an operation on each element using the .each method. With .each you can set up a block of code in curly brackets that will be executed on each key/value pair. It might look like this:
 
     veggies.each { |veg, number| puts "There are #{number} #{veg}."}
 
