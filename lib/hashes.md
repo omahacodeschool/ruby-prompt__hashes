@@ -5,7 +5,7 @@ instructor_notes: Feel free to re-organize the headings (or add/remove headings)
 
 # What is a Hash?
 
-A Hash is similar to an Array but allows us to organize multiple lists together.
+A Hash allows you to store multiple organized lists of various data types by assigning "values" to "keys".
 
 # What are some examples of information that would be Hashes as opposed to some other data type?
 
@@ -13,7 +13,7 @@ If you were making an errand list or maybe a packing list for a family, it would
 
 # How are Hashes and Arrays similar? How are they different?
 
-Both Hashes and Arrays can contain multiple elements that make up lists of data. The elements in an Array are addressed by using the indexed position in the Array starting at 0. Hashes on the other hand have keys and values. By using a Hash you can make more complex lists of data instead of being limited to a single list when using an Array.
+Both Hashes and Arrays can contain multiple elements that make up lists of data. The elements in an Array are addressed by using the indexed position in the Array starting at 0. Hashes on the other hand have keys and values. By using a Hash you can assign multiple values to a single key which helps when creating lists within lists.
 
 # How do you retrieve a particular value from a Hash?
 
