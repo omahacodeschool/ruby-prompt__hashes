@@ -12,6 +12,9 @@ A dictionary like collection of data that pairs unique keys to their correspondi
 Keys can be any data type.
 Strings and numbers would be the two most common data types. 
 
+I would use hashes to keep track of things like name:number  name:email  name:address
+product:price  product:location    x-value:y-value   state:capital  username:password etc
+
 
 # How are Hashes and Arrays similar? How are they different?
 
@@ -19,6 +22,19 @@ Hashes are special arrays.
 They can be used interchangably, but hashes are easier to maintain and manipulate.
 Arrays use integers to index so you have to remember where the information is stored.
 Hashes store the information in a less liner fashion so all you have to remember are the keys.
+
+
+
+Repsonse:
+If I just wanted a list of students I would use an array.  It would be easy to add to the end of and I could maulipulate it
+using the array methods. 
+
+If I were to pair information like like a student's name to his/her email, I would use a hash.  
+It is much easier to remember a word or name than it is to remember a number or index.
+
+If you want to link name, email, and age it would be best to use an array of hashes.
+
+
 
 # How do you retrieve a particular value from a Hash?
 
@@ -51,6 +67,11 @@ Use .delete.
 # What happens if you try to retrieve an element from a Hash that does not exist in the Hash?
 
 The program returns nil.  You can set a different default if desired.
+
+
+see screen shot on pull request comment
+
+
 
 # How do you determine how many elements are in a Hash?
 
